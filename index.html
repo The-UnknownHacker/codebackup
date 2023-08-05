@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+            gap: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h2 {
+            margin-top: 0;
+        }
+
+        .project p {
+            margin-top: 0.5rem;
+            font-size: 14px;
+        }
+
+        .project a button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2F954E;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 15px;
+        }
+
+        .project a button:hover {
+            background-color: #25813C;
+            transform: scale(1.05);
+        }
+
+        .download-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2F954E;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .download-button:hover {
+            background-color: #25813C;
+            transform: scale(1.05);
+        }
+
+        .explore-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2F954E;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 15px;
+        }
+
+        .explore-button:hover {
+            background-color: #254281;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            border-radius: 15px;
+        }
+    </style>
+    <title>Your Projects</title>
+</head>
+<body>
+    <header>
+        <h1>Main Menu</h1>
+    </header>
+
+    <main>
+        <div class="project-grid">
+            <section class="project">
+                <h2>Object Detection</h2>
+                <p>A program that Detects objects with yolov3-tiny</p>
+                <a href="Working Object Detection.zip" download>
+                    <button class="download-button">Download Project</button>
+                </a>
+                <a href="object_p_d.html">
+                    <button class="explore-button">Explore Project</button>
+                </a>
+            </section>
+
+            <section class="project">
+                <h2>Crossy road</h2>
+                <p>The last remaining backup
+                    Of crossy road
+                </p>
+                <a href="CrossyRoad_1.3.4.0.appx" download>
+                    <button class="download-button">Download Project</button>
+                </a>
+                <a href="crossy_p_d.html">
+                    <button class="explore-button">Explore Project</button>
+                </a>
+            </section>
+            
+            <section class="project">
+                <h2>Mathkit</h2>
+                <p>Mathematical Calculations in python made simple </p>
+                <a href="mathkit-3.3.4.zip" download>
+                    <button class="download-button">Download Project</button>
+                </a>
+                <a href="math_p_d.html">
+                    <button class="explore-button">Explore Project</button>
+                </a>
+            </section>
+
+            <!-- Add more project sections as needed -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 theunknownhacker</p>
+    </footer>
+</body>
+</html>
